@@ -1,9 +1,15 @@
+import { banner1, banner2, banner3, banner4, banner5 } from '../assets';
+
+const images = [banner1, banner2, banner3, banner4, banner5];
+
 const Header = () => {
 
     return (
-        <main>
-            <h1 className="text-3xl text-blue-500">This is the header</h1>      
-        </main>
+        <header className='w-full h-full'>
+            <div className='relative w-full h-full'>
+                <img src={images[Math.floor(Math.random() * images.length)]} alt='Hero Images' className='w-full h-full object-cover' />
+            </div>     
+        </header>
     )
 }
 

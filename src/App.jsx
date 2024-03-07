@@ -1,11 +1,13 @@
-import Header from "./components/Header"
+import Home from "./pages/Home"
 
 function App() {
 
   return (
     <>
-      <Header />
-     <h1 className='text-3xl font-bold text-red-500'>APP PAGE</h1> 
+      <main className="bg-black">
+        <Home />
+
+      </main>
     </>
   )
 }
